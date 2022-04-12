@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+canvas
+{
+    border: black 4px solid;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.div-canvas {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem
+}
+
+body
+{
+    background-color: rgb(248, 239, 227);
+    font-size: 62.5%;
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    user-select: none;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#colorButton {
+  border: 2px black solid;
+}
+
+#colorButton:hover {
+    background-color: rgb(211, 207, 207);
+}
+
+#borrarDib {
+    border: 2px black solid;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    user-select: none;
+}
+
+.pcolor {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+    user-select: none;
+}
+
+#borrarDib:hover {
+    background-color: rgb(211, 207, 207);
+}
+#borrarDib:active {
+    color:rgb(212, 0, 255);
+}
+
+.option-line {
+    margin-right: 1rem;
+    font-size: 1rem;
+    user-select: none;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 4rem;
+}
+
+@media (max-width: 821px)
+{
+    .buttons {
+        flex-direction: column;
+    }
+
+    .pcolor {
+        margin-left: 1rem;
+    }
+
+    #colorButton {
+        margin-left: 1.2rem;
+        margin-top: 0.2rem;
+    }
+
+    #borrarDib {
+        width: 6rem;
+        margin-top: 0.4rem;
+    }
+
+    input {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    canvas {
+        width: 320px;
+        height: 500px;
+    }
+
+    h5 {
+        margin-bottom: 1rem;
+    }
+}

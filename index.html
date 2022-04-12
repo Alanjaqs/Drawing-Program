@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estiloCanvas.css">
+    <title>El Peint</title>
+</head>
+<body>
+    <h1>El Peint</h1>
+    <div class="div-canvas">
+        <canvas id="dibujo" width="500" height="500"></canvas>
+    </div>
+    <br>
+    <div class="buttons">
+        <strong class="pcolor"> Color</strong><input id="colorButton" type="color"/>
+        <input id="borrarDib" type="button" value="Borrar Dibujo" onclick="borrarCanvas()"/>
+        <label for="line-one"><input id="line-one" name="line-sel" checked type="radio" onclick="selectGROSOR()"><strong class="option-line">Pincel 1</strong></label>
+        <label for="line-two"><input id="line-two" name="line-sel" type="radio" onclick="selectGROSOR()"><strong class="option-line">Pincel 2</strong></label>
+        <label for="line-three"><input id="line-three" name="line-sel"type="radio" onclick="selectGROSOR()"><strong class="option-line">Pincel 3</strong></label>
+        <label for="line-four"><input id="line-four" name="line-sel"type="radio" onclick="selectGROSOR()"><strong class="option-line">Pincel 4</strong></label>
+    </div>  
+    <footer>
+        <h5>Creado por Alan Jaques / 2022</h5>
+    </footer>
+    <script src="scriptCanvas.js"></script>
+</body>
+</html>
